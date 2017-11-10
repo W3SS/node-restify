@@ -4,7 +4,12 @@
 var inquirer = require('inquirer');
 var bench = require('./lib/bench');
 
-var BENCHMARKS = ['response-json', 'response-text', 'router-heavy'];
+var BENCHMARKS = [
+    'response-json',
+    'response-text',
+    'router-heavy',
+    'middleware'
+];
 
 function select(callback) {
     var choices = BENCHMARKS.map(function map(name) {
